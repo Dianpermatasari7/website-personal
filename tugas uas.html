@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Penjualan barang</title>
+        <link rel="stylesheet" href="styles uas.css">
+    </head>
+    <body>
+        <!-- header -->
+         <header>
+            <nav>
+                <img src="C:\Users\Lenovo\Pictures\Screenshots\logo nama.png" width="200px" height="100px" alt="Logo Aplikasi">
+                <ul class="nav-links">
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#bernda">Beranda</a></li>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#transaksi">Transaksi</a></li>
+                </ul>
+            </nav>
+         </header>
+
+         <!-- main content -->
+         <main>
+            <!--section: daftar produk-->
+            <section id="products" class="product-section">
+                <h1>Daftar Produk</h1>
+                <div class="product list">
+                    <div class="product-card">
+                        <img src="C:\Users\Lenovo\Pictures\Screenshots\logo nama.png" alt="produk 1">
+                        <h3>Nama Produk 1</h3>
+                        <p>Harga : Rp. 5.000</p>
+                        <button onclick="addToCard('produk 1')">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="product-card">
+                    <img src="C:\Users\Lenovo\Pictures\Screenshots\logo nama.png" alt="produk 2">
+                    <h3>Nama Produk 2</h3>
+                    <p>Harga : Rp. 3.000</p>
+                    <button onclick="addtocard('produk 2')">Tambah ke Keranjang</button>
+                    </div>
+                <div class="product-card">
+                    <img src="C:\Users\Lenovo\Pictures\Screenshots\logo nama.png" alt="produk 3">
+                    <h3>Nama produk 3</h3>
+                    <p>Harga : Rp. 7.000</p>
+                    <button onclick="addToCard('produk 3')">Tambah ke keranjang</button>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- Section: Form Pemesanan -->
+        <section id="order" class="order-section">
+            <h2>Form Pemesanan</h2>
+            <form action="#" method="post">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Nomor hp:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Alamat Pengiriman:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <label for="product">Pilih produk:</label>
+                <select id="product" name="product" required>
+                    <option value="produk 1">Nama produk 1</option>
+                    <option value="produk2">Nama Produk 2</option>
+                    <option value="produk3">Nama Produk 3</option>
+                </select>
+                <button type="submit">Pesan Sekarang</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy;Dian permatasari 2025.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function addToCart(product) {
+            alert(product + " telah ditambahkan ke keranjang!");
+
+        }
+    </script>
+    </body>
+</html>
